@@ -1,0 +1,21 @@
+{
+  "name": "docker-manager-mcp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "catalog:",
+    "dockerode": "^4.0.9",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.47"
+  }
+}

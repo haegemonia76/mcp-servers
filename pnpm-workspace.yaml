@@ -1,0 +1,6 @@
+packages:
+  - 'services/*'
+
+catalog:
+  "@modelcontextprotocol/sdk": "^1.22.0"
+  zod: "^3.23.8"

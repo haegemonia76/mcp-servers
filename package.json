@@ -1,0 +1,24 @@
+{
+  "name": "mcp-servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:docker": "pnpm --filter docker-manager-mcp start",
+    "start:postgres": "pnpm --filter postgres-manager-mcp start",
+    "start:redis": "pnpm --filter redis-manager-mcp start",
+    "start:git": "pnpm --filter git-manager-mcp start",
+    "build": "pnpm -r run build",
+    "build:docker": "pnpm --filter docker-manager-mcp run build",
+    "build:postgres": "pnpm --filter postgres-manager-mcp run build",
+    "build:redis": "pnpm --filter redis-manager-mcp run build",
+    "build:git": "pnpm --filter git-manager-mcp run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.10.1"
+  }
+}

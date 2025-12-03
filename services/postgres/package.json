@@ -1,0 +1,21 @@
+{
+  "name": "postgres-manager-mcp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "catalog:",
+    "pg": "^8.16.3",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6"
+  }
+}

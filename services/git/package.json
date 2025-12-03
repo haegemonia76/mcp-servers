@@ -1,0 +1,19 @@
+{
+  "name": "git-manager-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Git operations",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "keywords": ["mcp", "git"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "catalog:",
+    "simple-git": "^3.27.0",
+    "zod": "catalog:"
+  }
+}

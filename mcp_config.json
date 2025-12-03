@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "docker-manager": {
+      "command": "node",
+      "args": ["/home/haegemonia76/workspace/github/haegemonia76/mcp-servers/services/docker/build/index.js"],
+      "env": {}
+    },
+    "postgres-manager": {
+      "command": "node",
+      "args": ["/home/haegemonia76/workspace/github/haegemonia76/mcp-servers/services/postgres/build/index.js"],
+      "env": {
+        "DATABASE_URL": "postgresql://user:password@localhost:5432/dbname",
+        "PG_ALLOW_WRITE": "false"
+      }
+    },
+    "redis-manager": {
+      "command": "node",
+      "args": ["/home/haegemonia76/workspace/github/haegemonia76/mcp-servers/services/redis/build/index.js"],
+      "env": {
+        "REDIS_URL": "redis://localhost:6379"
+      }
+    },
+    "git-manager": {
+      "command": "node",
+      "args": ["/home/haegemonia76/workspace/github/haegemonia76/mcp-servers/services/git/build/index.js"],
+      "env": {
+        "GIT_REPO_PATH": "."
+      }
+    }
+  }
+}
